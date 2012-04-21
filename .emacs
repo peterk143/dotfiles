@@ -48,3 +48,6 @@
 
 ; enable clipboard
 (setq x-select-enable-clipboard t)
+
+; line by line scrolling
+(setq scroll-step 1)

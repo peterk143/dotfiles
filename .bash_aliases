@@ -26,8 +26,8 @@ alias testing='ssh tvhost001'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias shutdown='sudo shutdown -h now'
-alias fix='sudo apt-get update && upgrade'
 alias utz='gnome-session-save --force-logout'
+alias fix='sudo apt-get update && sudo apt-get dist-upgrade'
 
 #--checkouts--#
 alias lics='svn co https://svn.lcsee.wvu.edu/oldcvs/trunk/sysstaff/ops/licenses/'
