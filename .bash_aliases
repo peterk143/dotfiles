@@ -5,6 +5,7 @@ alias la='ls -A'
 alias cp='cp -v'
 alias lisa='ls -lisA'
 alias asdf='cd && clear'
+alias lds='ldapsearch -xLLL'
 
 #--programs--#
 alias nano='nano -S'
@@ -18,14 +19,13 @@ alias home='ssh bawlz'
 alias dmzshell='ssh dmz'
 alias shello='ssh shell'
 alias actz='ssh accounts'
-alias test='ssh testServ'
 alias startup='ssh dvhost001'
 alias testing='ssh tvhost001'
 
 #--maintanence--#
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
-alias shutdown='sudo shutdown -h now'
+alias shutdown='sudo shutdown -P now'
 alias utz='gnome-session-save --force-logout'
 alias fix='sudo apt-get update && sudo apt-get dist-upgrade'
 
