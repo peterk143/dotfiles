@@ -6,6 +6,7 @@ alias cp='cp -v'
 alias lisa='ls -lisA'
 alias asdf='cd && clear'
 alias lds='ldapsearch -xLLL'
+alias dip='sudo umount /media/p*'
 
 #--programs--#
 alias nano='nano -S'
