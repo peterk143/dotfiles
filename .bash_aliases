@@ -7,6 +7,7 @@ alias lisa='ls -lisA'
 alias asdf='cd && clear'
 alias lds='ldapsearch -xLLL'
 alias dip='sudo umount -v /media/p*'
+alias utz='gnome-session-quit --logout --no-prompt'
 
 #--programs--#
 alias nano='nano -S'
@@ -27,7 +28,6 @@ alias testing='ssh tvhost001'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias shutdown='sudo shutdown -P now'
-alias utz='gnome-session-save --force-logout'
 alias fix='sudo apt-get update && sudo apt-get dist-upgrade'
 
 #--checkouts--#
