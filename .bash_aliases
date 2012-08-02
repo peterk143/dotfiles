@@ -28,7 +28,7 @@ alias testing='ssh tvhost001'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias shutdown='sudo shutdown -P now'
-alias fix='sudo apt-get update && sudo apt-get dist-upgrade'
+alias fix='sudo apt-get update && sudo apt-get -y dist-upgrade'
 
 #--checkouts--#
 alias lics='svn co https://svn.lcsee.wvu.edu/oldcvs/trunk/sysstaff/ops/licenses/'
