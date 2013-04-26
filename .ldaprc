@@ -1,2 +1,0 @@
-BINDDN uid=pkirkpat,ou=people,dc=lcsee,dc=wvu,dc=edu
-BASE   dc=lcsee,dc=wvu,dc=edu
