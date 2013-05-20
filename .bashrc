@@ -87,8 +87,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f /cloudhome/pkirkpat/.bash_aliases ]; then
+    . /cloudhome/pkirkpat/.bash_aliases
+elif [ -f /home/pkirkpat/.bash_aliases ]; then
+    . /home/pkirkpat/.bash_aliases
 fi
 
 # welcome
@@ -99,7 +101,6 @@ fi
 #echo -e "       WVU LCSEE Systems \t       ${T}"
 #echo -ne "  ----------------------------------------------------------\n"
 
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -107,9 +108,18 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f /cloudhome/pkirkpat/skripts/startup.sh ]; then 
+    eval /cloudhome/pkirkpat/skripts/startup.sh
+fi
+
+## set environment variables
+export DEBFULLNAME="Peter Kirkpatrick"
 export DEBEMAIL=pkirkpat@csee.wvu.edu
 export DEBEDITOR=nano
-export EDITOR=nano
-export DEBFULLNAME="Peter Kirkpatrick"
+export EDITOR='emacs -nw'
 
-export PATH=$PATH:/usr/share/android/tools/:/usr/share/android/platform-tools/
+GIT=`git --version`
+if [ $? > 1 ]; then
+    git config --global user.email "peter.k143@gmail.com"
+    git config --global user.name "Peter Kirkpatrick"
+fi
