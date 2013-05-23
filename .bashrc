@@ -108,6 +108,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+## run startup script
 if [ -f /cloudhome/pkirkpat/skripts/startup.sh ]; then 
     eval /cloudhome/pkirkpat/skripts/startup.sh
 fi
@@ -118,8 +119,3 @@ export DEBEMAIL=pkirkpat@csee.wvu.edu
 export DEBEDITOR=nano
 export EDITOR='emacs -nw'
 
-GIT=`git --version`
-if [ $? > 1 ]; then
-    git config --global user.email "peter.k143@gmail.com"
-    git config --global user.name "Peter Kirkpatrick"
-fi
