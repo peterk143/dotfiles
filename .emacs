@@ -44,7 +44,7 @@
 
 ; split windows
 ;(split-window-vertically)
-(split-window-horizontally)
+;(split-window-horizontally)
 
 ; enable clipboard
 (setq x-select-enable-clipboard t)
