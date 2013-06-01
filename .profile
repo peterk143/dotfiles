@@ -20,3 +20,8 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+## run startup script
+if [ -f /cloudhome/$USER/skripts/startup.sh ]; then 
+    eval /cloudhome/$USER/skripts/startup.sh
+fi

@@ -87,10 +87,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f /cloudhome/pkirkpat/.bash_aliases ]; then
-    . /cloudhome/pkirkpat/.bash_aliases
-elif [ -f /home/pkirkpat/.bash_aliases ]; then
-    . /home/pkirkpat/.bash_aliases
+if [ -f /cloudhome/$USER/.bash_aliases ]; then
+    . /cloudhome/$USER/.bash_aliases
+elif [ -f /home/$USER/.bash_aliases ]; then
+    . /home/$USER/.bash_aliases
 fi
 
 # welcome
@@ -106,11 +106,6 @@ fi
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
-fi
-
-## run startup script
-if [ -f /cloudhome/pkirkpat/skripts/startup.sh ]; then 
-    eval /cloudhome/pkirkpat/skripts/startup.sh
 fi
 
 ## set environment variables
