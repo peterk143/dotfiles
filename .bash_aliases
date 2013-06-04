@@ -9,7 +9,7 @@ alias lisa='ls -lisA'
 alias asdf='cd && clear'
 alias lds='ldapsearch -xLLL'
 alias utz='gnome-session-quit --logout --no-prompt'
-alias dip='sudo umount -v /media/${USER}/THC && sudo umount -v /media/${USER}/PCP'
+alias dip='sudo umount -v /media/THC && sudo umount -v /media/PCP'
 
 #--programs--#
 alias nano='nano -S'
