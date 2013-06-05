@@ -109,9 +109,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 ## link ssh private keys
-if [ -d /media/${USER}/PCP/.ssh ]; then
+if [ -d /media/PCP/.ssh ]; then
     if ! [ -h ~/.ssh/identity.bbs ]; then
-	ln -s /media/${USER}/PCP/.ssh/identity.bbs /home/${USER}/.ssh/
+	ln -s /media/PCP/.ssh/identity.ovt /home/${USER}/.ssh/
+	ln -s /media/PCP/.ssh/identity.bbs /home/${USER}/.ssh/
     fi
 fi
 
