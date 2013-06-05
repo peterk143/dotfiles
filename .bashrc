@@ -108,6 +108,14 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+## link ssh private keys
+if [ -d /media/PCP/.ssh ]; then
+    if ! [ -h ~/.ssh/identity.bbs ]; then
+	ln -s /media/PCP/.ssh/identity.ovt /home/${USER}/.ssh/
+	ln -s /media/PCP/.ssh/identity.bbs /home/${USER}/.ssh/
+    fi
+fi
+
 ## set environment variables
 export DEBFULLNAME="Peter Kirkpatrick"
 export DEBEMAIL=pkirkpat@csee.wvu.edu
