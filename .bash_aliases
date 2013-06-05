@@ -18,13 +18,8 @@ alias chat='weechat-curses'
 alias chrome='chromium-browser'
 
 #--ssh--#
-alias spam='ssh rt001'
-alias home='ssh bawlz'
 alias dmzshell='ssh dmz'
 alias shello='ssh shell'
-alias actz='ssh accounts'
-alias startup='ssh dvhost001'
-alias testing='ssh tvhost001'
 
 #--maintanence--#
 alias update='sudo apt-get update'
