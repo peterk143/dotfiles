@@ -18,8 +18,11 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:/cloudhome/$USER/skripts:$PATH"
+    PATH="$HOME/bin:$PATH"
 fi
+
+## set PATH
+PATH=$PATH:/cloudhome/$USER/skripts
 
 ## run startup script
 if [ -f /cloudhome/$USER/skripts/quick-start ]; then 
