@@ -111,7 +111,7 @@ fi
 ## link ssh private keys
 if [ -d /media/PCP/.ssh ]; then
     if ! [ -h ~/.ssh/identity.bbs ]; then
-	ln -s /media/PCP/.ssh/identity.bbs /home/${USER}/.ssh/
+	ln -s /media/PCP/.ssh/identity.bbs /home/${USER}/.ssh/identity
     fi
 fi
 
