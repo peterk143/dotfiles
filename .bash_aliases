@@ -9,7 +9,7 @@ alias lisa='ls -lisA'
 alias asdf='cd && clear'
 alias lds='ldapsearch -xLLL'
 alias utz='gnome-session-quit --logout --no-prompt'
-
+alias cleanme='sudo apt-get autoremove && sudo apt-get autoclean"
 
 #--programs--#
 alias nano='nano -S'
