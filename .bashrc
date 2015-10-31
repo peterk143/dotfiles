@@ -89,8 +89,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 if [ -f /home/$USER/.bash_aliases ]; then
     . /home/$USER/.bash_aliases
-elif [ -f /cloudhome/$USER/.bash_aliases ]; then
-    . /cloudhome/$USER/.bash_aliases
 fi
 
 # welcome
@@ -117,6 +115,6 @@ fi
 
 ## set environment variables
 export DEBFULLNAME="Peter Kirkpatrick"
-export DEBEMAIL=pkirkpat@csee.wvu.edu
-export DEBEDITOR=nano
+export DEBEMAIL="peter.k143@gmail.com"
+export DEBEDITOR='emacs -nw'
 export EDITOR='emacs -nw'

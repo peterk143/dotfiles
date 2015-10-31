@@ -9,7 +9,7 @@ alias lisa='ls -lisA'
 alias asdf='cd && clear'
 alias lds='ldapsearch -xLLL'
 alias utz='gnome-session-quit --logout --no-prompt'
-alias dip='sudo umount -v /media/${USER}/THC && sudo umount -v /media/${USER}/PCP'
+
 
 #--programs--#
 alias nano='nano -S'
@@ -17,17 +17,8 @@ alias emacs='emacs -nw'
 alias chat='weechat-curses'
 alias chrome='chromium-browser'
 
-#--ssh--#
-alias dmzshell='ssh dmz'
-alias shello='ssh shell'
-
-#--maintanence--#
+#--maintenance--#
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
-alias shutdown='sudo shutdown -P now'
+alias shutdown='sudo shutdown -h now'
 alias fix='sudo apt-get update && sudo apt-get -y dist-upgrade'
-
-#--checkouts--#
-alias lics='svn co https://svn.lcsee.wvu.edu/oldcvs/trunk/sysstaff/ops/licenses/'
-alias lsrt='svn co https://svn.lcsee.wvu.edu/loud/lcsee-sysstaff-reference/trunk/'
-alias lsrb='svn co https://svn.lcsee.wvu.edu/loud/lcsee-sysstaff-reference/branches/'
