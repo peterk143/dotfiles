@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cp -r .emacs* .weechat .ssh .bash* .profile ~/
