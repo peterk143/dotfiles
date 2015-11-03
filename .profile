@@ -20,11 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-## set PATH
-PATH=$PATH:/cloudhome/$USER/skripts
-
-## run startup script
-if [ -f /cloudhome/$USER/skripts/quick-start ]; then 
-    eval /cloudhome/$USER/skripts/quick-start
-fi
