@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-backed up (.)files
+backed up (.)files and a setup script 
